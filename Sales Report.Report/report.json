@@ -1,0 +1,78 @@
+{
+  "config": "{\"version\":\"5.49\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU04\",\"version\":\"5.45\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU04",
+            "path": "BaseThemes/CY23SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1331892d591be30d24b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":729.1162881182821,\"y\":82.34100157255645,\"z\":1000,\"width\":269.6003761165961,\"height\":154.05735778091207}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Table15.Total Sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table15\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Total Sales\"},\"Name\":\"Table15.Total Sales\",\"NativeReferenceName\":\"Total Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Total Sales\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"referenceLabel\":[{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":0}}],\"metadata\":\"Table15.Total Sales\",\"id\":\"field-690a1942-d562-670a-6ee3-6ddb2ca61b29\",\"order\":0}}]}}}",
+          "filters": "[]",
+          "height": 154.06,
+          "width": 269.60,
+          "x": 729.12,
+          "y": 82.34,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"309fc87dee4932055091\",\"layouts\":[{\"id\":0,\"position\":{\"x\":881.8455652286691,\"y\":343.972893666002,\"z\":4000,\"width\":269.6003761165961,\"height\":329.3640062902258}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dimOrderPriority.OrderPriority\",\"active\":true}],\"Y\":[{\"queryRef\":\"Table15.Total Sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimOrderPriority\",\"Type\":0},{\"Name\":\"t\",\"Entity\":\"Table15\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"OrderPriority\"},\"Name\":\"dimOrderPriority.OrderPriority\",\"NativeReferenceName\":\"OrderPriority\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Total Sales\"},\"Name\":\"Table15.Total Sales\",\"NativeReferenceName\":\"Total Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Total Sales\"}}}]},\"autoSelectVisualType\":true,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 329.36,
+          "width": 269.60,
+          "x": 881.85,
+          "y": 343.97,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"a8609e143001d459a260\",\"layouts\":[{\"id\":0,\"position\":{\"x\":314.75511891444967,\"y\":159.3696804630125,\"z\":0,\"width\":300.14623153867353,\"height\":474.1247993774622}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"dimAcctManager.AccountManager\",\"active\":true}],\"Values\":[{\"queryRef\":\"Table15.Total Sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table15\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dimAcctManager\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"AccountManager\"},\"Name\":\"dimAcctManager.AccountManager\",\"NativeReferenceName\":\"AccountManager\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Total Sales\"},\"Name\":\"Table15.Total Sales\",\"NativeReferenceName\":\"Total Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Total Sales\"}}}]},\"autoSelectVisualType\":false,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 474.12,
+          "width": 300.15,
+          "x": 314.76,
+          "y": 159.37,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e2f25617e33895661d16\",\"layouts\":[{\"id\":0,\"position\":{\"x\":51.79514615047906,\"y\":209.83674594296644,\"z\":3000,\"width\":241.71068203556894,\"height\":448.8912666374852}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"dimPaymentType.PaymentType\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dimPaymentType\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"PaymentType\"},\"Name\":\"dimPaymentType.PaymentType\",\"NativeReferenceName\":\"PaymentType\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 448.89,
+          "width": 241.71,
+          "x": 51.80,
+          "y": 209.84,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"f27f4a6dbee7a797e051\",\"layouts\":[{\"id\":0,\"position\":{\"x\":555.9798994974874,\"y\":508.9447236180904,\"z\":2000,\"width\":241.20603015075375,\"height\":211.05527638190952}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"dimRegion.Region\",\"active\":true}],\"Values\":[{\"queryRef\":\"Table15.Abiola David Total Sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table15\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"dimRegion\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Region\"},\"Name\":\"dimRegion.Region\",\"NativeReferenceName\":\"Region\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Abiola David Total Sales\"},\"Name\":\"Table15.Abiola David Total Sales\",\"NativeReferenceName\":\"Abiola David Total Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Abiola David Total Sales\"}}}]},\"autoSelectVisualType\":false,\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 211.06,
+          "width": 241.21,
+          "x": 555.98,
+          "y": 508.94,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
