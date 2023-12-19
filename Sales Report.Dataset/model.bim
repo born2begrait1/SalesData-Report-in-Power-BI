@@ -1140,6 +1140,42 @@
             "lineageTag": "c477ecd7-74ac-4aa3-9f7c-7af3bc4b2113"
           },
           {
+            "name": "Abiola David Total Sales",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-GB\"}"
+              }
+            ],
+            "expression": "CALCULATE([Total Sales],dimAcctManager[AccountManager]=\"Abiola David\")",
+            "formatString": "\"£\"#,0.00;-\"£\"#,0.00;\"£\"#,0.00",
+            "lineageTag": "546e59bd-baf5-4127-bdba-237446711ffc"
+          },
+          {
+            "name": "Abiola David Total Sales FILTER ALL",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-GB\"}"
+              }
+            ],
+            "expression": "CALCULATE([Total Sales],FILTER(ALL(dimAcctManager[AccountManager]),dimAcctManager[AccountManager]=\"Abiola David\"))",
+            "formatString": "\"£\"#,0.00;-\"£\"#,0.00;\"£\"#,0.00",
+            "lineageTag": "1d8f38e4-c27f-4d48-9add-95888fda8dbf"
+          },
+          {
+            "name": "Abiola David Total Sales FILTER VALUEs",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-GB\"}"
+              }
+            ],
+            "expression": "CALCULATE([Total Sales],FILTER(VALUES(dimAcctManager[AccountManager]),dimAcctManager[AccountManager]=\"Abiola David\"))",
+            "formatString": "\"£\"#,0.00;-\"£\"#,0.00;\"£\"#,0.00",
+            "lineageTag": "6934eeca-09e5-4e70-bec9-d9a022d2bfd1"
+          },
+          {
             "name": "Sales Between 100000 and 200000",
             "annotations": [
               {
